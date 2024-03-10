@@ -1,5 +1,3 @@
 # Ansible Collection - rarrais.borgwarehouse
 
-Documentation for the collection.
-
-* Missing: LICENSE
+Ansible Collection for managing BorgWarehouse
