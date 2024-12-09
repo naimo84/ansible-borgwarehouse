@@ -112,9 +112,10 @@ class BorgWarehouseClient:
         self.data = {
             'alias': alias,
             'sshPublicKey': ssh_public_key,
-            'size': str(size),
+            'storageSize': size,
             'alert': alert,
             'comment': comment,
+            'appendOnlyMode': False,
             'lanCommand': False
         }
 
