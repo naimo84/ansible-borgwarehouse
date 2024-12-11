@@ -35,7 +35,7 @@ options:
     alias:
         description: Repository name.
         required: true
-        type: str
+        type: str     
     ssh_public_key:
         description: Repository SSH publick key.
         required: true
@@ -46,7 +46,7 @@ options:
         type: str
         default: present
         choices: [ absent, present ]
-    size:
+    storageSize:
         description: Repository storage size in GB.
         required: false
         type: int
@@ -179,7 +179,7 @@ def run_module():
         ssh_public_key=dict(type='str', required=True),
         state=dict(type='str', required=False, choices=['absent', 'present'], default='present'),
         alert=dict(type='int', required=False, default=172800),
-        size=dict(type='int', required=False, default=10),
+        storageSize=dict(type='int', required=False, default=10),
         comment=dict(type='str', required=False, default="Managed by Ansible.")
     )
 
@@ -203,7 +203,7 @@ def run_module():
                                         module.params['api_token'],
                                         module.params['alias'],
                                         module.params['ssh_public_key'],
-                                        module.params['size'],
+                                        module.params['storageSize'],
                                         module.params['alert'],
                                         module.params['comment'])
 
