@@ -99,7 +99,7 @@ repository:
 from ansible.module_utils.basic import AnsibleModule
 
 class BorgWarehouseClient:
-    def __init__(self, url, api_token, alias, ssh_public_key, size, alert, comment):
+    def __init__(self, url, api_token, alias, ssh_public_key, storageSize, alert, comment):
         self.url = url
         self.alias = alias
 
@@ -112,7 +112,7 @@ class BorgWarehouseClient:
         self.data = {
             'alias': alias,
             'sshPublicKey': ssh_public_key,
-            'storageSize': size,
+            'storageSize': storageSize,
             'alert': alert,
             'comment': comment,
             'appendOnlyMode': False,
@@ -152,7 +152,7 @@ class BorgWarehouseClient:
         
         if self.repository['sshPublicKey'] != self.data['sshPublicKey']:
             changed = True
-        if int(self.repository['storageSize']) != int(self.data['size']):
+        if int(self.repository['storageSize']) != int(self.data['storageSize']):
             changed = True
         if int(self.repository['alert']) != int(self.data['alert']):
             changed = True
