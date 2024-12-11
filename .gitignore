@@ -1,2 +1,4 @@
 # Ansible Collection builds
 *.tar.gz
+bin
+lib

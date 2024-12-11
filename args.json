@@ -1,0 +1,8 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "url": "https://borg.naimo84.dev",
+        "api_token": "fa4a3c62-beb3-4342-84e8-00e1d7953d7a",
+        "alias": "omv-benjamin",
+        "ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNtY3dxnqNT0vftNeQSfGukiBC1JTCXMPdQ5smhM9TspGDAn5Cvxxbwl5F4Q2aDVS7ARkYw2ueRgY4kO+ZNGPxrfMBCsFfwR1RkLqf1DihEisDb7JlaFWzObB5BCzCGYc0PVnwTfd7B4uDtLgXr6zStA+ggXmpU8D8oCPU1fxcpZSO1PiCQoush3Yj3hHyCQqdPF13mN+MzjvFsEFmaevLwkFRFnSYRZDcYKQcH03J22GhmrzFb3cjUXvan4hVgRLzBODWAuVByce1YtU65nytOaxNCdxai75Br27ZfOJiPetUR1lEZGk9C9ahOZmocNB/Z//K46XWXhsdZfZUjhd+sYE1i9QzNg0HWqiuOCKIyC4qOwEz2cvCYrLYuYRXDpiUGPYbi/UlyxTlLHTvuuaiPAwHPhkAcnZTp6W3YUQRTemOacTFluRqD6AMUoYBkAbZOlR+FRlky6+QkNxd9VFLlTj/JyzOP1XZAfKKeaJlbE8x8IL+fshw353MHwlHoHU= root@borg"
+    }
+}
