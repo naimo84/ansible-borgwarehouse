@@ -160,7 +160,7 @@ class BorgWarehouseClient:
             changed = True
 
         if changed == True:
-            self.session.put(edit_api_url, data=json.dumps(self.data), headers=self.headers)
+            self.session.patch(edit_api_url, data=json.dumps(self.data), headers=self.headers)
         
         return changed
 
